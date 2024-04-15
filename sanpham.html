@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản phẩm</title>
+    <link rel="stylesheet" href="CSS/sanpham.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/cropped-Logo-Katinat-Saigon-Kafe-Icon-Copy.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li class="home"><a href="index.html"><i class="fa-solid fa-house"></i> Trang chủ</a></li>
+                <li class="product"><a href="sanpham.html"><i class="fa-solid fa-mug-hot"></i> Sản phẩm</a></li>
+                <li class="submenu">
+                    <a href="#"><i class="fa-solid fa-user"></i> Đăng nhập/Đăng ký</a>
+                    <div class="submenu-content">
+                        <a href="dangnhap.html"><i class="fa-sharp fa-solid fa-right-to-bracket"></i> Đăng nhập</a>
+                        <a href="dangky.html"><i class="fa-solid fa-user-plus"></i> Đăng ký</a>
+                    </div>
+                </li>
+                <li class="cart"><a href="giohang.html"><i class="fa-solid fa-cart-shopping"></i> Giỏ hàng (<span
+                            id="total-items">0</span>)</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <div class="cf">
+        <h2>Cà Phê(Coffee)</h3>
+    </div>
+    <div class="cafe">
+        <div class="bacxiu">
+            <img src="img/3.-Bac-Xiu-300x300.png" alt="">
+            <h3>Bạc xĩu</h3>
+            <div class="add1" data-product="Bạc xĩu"><a href=""
+                    onclick="addToCart('Bạc xĩu','30000','img/3.-Bac-Xiu-300x300.png')">Thêm vào giỏ
+                    hàng</a></div>
+        </div>
+        <div class="more1"><a href="bacxiu.html">Chi tiết</a></div>
+        <div class="cfda">
+            <img src="img/2.-Ca-Phe-Den-300x300.png" alt="">
+            <h3>Cà phê đá</h3>
+            <div class="more2"><a href="cfda.html">Chi tiết</a></div>
+            <div class="add2" data-product="Cà phê đá"><a href=""
+                    onclick="addToCart('Cà phê đá','25000','img/2.-Ca-Phe-Den-300x300.png')">Thêm vào
+                    giỏ hàng</a></div>
+        </div>
+        <div class="cfsua">
+            <img src="img/1.-Ca-Phe-Sua-300x300.png" alt="">
+            <h3>Cà phê sữa</h3>
+            <div class="more3"><a href="cfsua.html">Chi tiết</a></div>
+            <div class="add3" data-product="Cà phê sữa"><a href=""
+                    onclick="addToCart('Cà phê sữa','30000','img/1.-Ca-Phe-Sua-300x300.png')">Thêm
+                    vào giỏ hàng</a></div>
+        </div>
+    </div>
+    <div class="cf">
+        <h2>Trà(Tea)</h3>
+    </div>
+    <div class="tra">
+        <div class="bacxiu">
+            <img src="img/18.-Tra-Cam-Que-Hong-Dai-300x300.png" alt="">
+            <h3>Trà cam quế hồng đài</h3>
+            <div class="more1"><a href="#">Chi tiết</a></div>
+            <div class="add4" data-product="Trà cam quế hồng đài"><a href=""
+                    onclick="addToCart('Trà cam quế hồng đài','40000','img/18.-Tra-Cam-Que-Hong-Dai-300x300.png')">Thêm
+                    vào giỏ hàng</a></div>
+        </div>
+        <div class="cfda">
+            <img src="img/22.-Tra-Chanh-Mat-Ong-300x300.png" alt="">
+            <h3>Trà chanh mật ong</h3>
+            <div class="more2"><a href="#">Chi tiết</a></div>
+            <div class="add5" data-product="Trà chanh mật ong"><a href=""
+                    onclick="addToCart('Trà chanh mật ong','35000','img/22.-Tra-Chanh-Mat-Ong-300x300.png')">Thêm vào
+                    giỏ hàng</a></div>
+
+        </div>
+        <div class="cfsua">
+            <img src="img/23.-Tra-Hoa-Cuc-Mat-Ong-300x300.png" alt="">
+            <h3>Trà hoa cúc mật ong</h3>
+            <div class="more3"><a href="#">Chi tiết</a></div>
+            <div class="add6" data-product="Trà hoa cúc mật ong"><a href=""
+                    onclick="addToCart('Trà hoa cúc mật ong','40000','img/23.-Tra-Hoa-Cuc-Mat-Ong-300x300.png')">Thêm
+                    vào giỏ hàng</a></div>
+        </div>
+    </div>
+    <div class="cf">
+        <h2>Trà Sữa(MilkTea)</h3>
+    </div>
+    <div class="tra">
+        <div class="bacxiu">
+            <img src="img/29.-Tra-Thai-Do-Sua-300x300.png" alt="">
+            <h3>Trà sữa Thái đỏ</h3>
+            <div class="more1"><a href="#">Chi tiết</a></div>
+            <div class="add7" data-product="Trà thái đỏ sữa"><a href=""
+                    onclick="addToCart('Trà thái đỏ sữa','35000','img/29.-Tra-Thai-Do-Sua-300x300.png')">Thêm vào giỏ
+                    hàng</a></div>
+        </div>
+        <div class="cfda">
+            <img src="img/27.-Tra-B_Lao-Sua-300x300.png" alt="">
+            <h3>Trà B-Lao sữa</h3>
+            <div class="more2"><a href="#">Chi tiết</a></div>
+            <div class="add8" data-product="Trà B Lao sữa"><a href=""
+                    onclick="addToCart('Trà B Lao Sữa','39000','img/27.-Tra-B_Lao-Sua-300x300.png')">Thêm vào giỏ
+                    hàng</a></div>
+
+        </div>
+        <div class="cfsua">
+            <img src="img/24.-Tra-Sua-Chom-Chom-300x300.png" alt="">
+            <h3>Trà sữa chôm chôm</h3>
+            <div class="more3"><a href="#">Chi tiết</a></div>
+            <div class="add9" data-product="Trà sữa chôm chôm"><a href=""
+                    onclick="addToCart('Trà sữa chôm chôm','40000','img/24.-Tra-Sua-Chom-Chom-300x300.png')">Thêm vào
+                    giỏ hàng</a></div>
+
+        </div>
+    </div>
+    <footer>
+        <div class="logo">
+            <img src="img/cropped-Logo-Katinat-Saigon-Kafe-Icon-Copy.png" alt="Logo">
+        </div>
+        <div class="link">
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a><br><br><br>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="footer-content">
+            <div class="canle">
+                <div class="trai">
+                    <h3>LIÊN HỆ</h3>
+                    <p>Email: cs@katinat.vn</p>
+                    <p>Representative Store : 91 Đồng Khởi, Bến Nghé, Quận 1, Thành Phố Hồ Chính Minh</p>
+                    <p>Working Office: 96-98-100 Trần Nguyên Đán, Phường 3, Quận Bình Thạnh, Thành Phố Hồ Chí Minh</p>
+                </div>
+                <div class="phai">
+                    <h3>VỀ CHÚNG TÔI</h3>
+                    <p>Katinat Saigon Kafe là chuỗi cà phê được lấy cảm hứng từ tinh hoa văn hoá và phong cách thưởng
+                        thức cà phê
+                        của Sài Gòn xưa pha lẫn với sự hiện đại và những phong vị mới mẻ của cuộc sống mới.</p>
+                    <p>Giấy chứng nhận Đăng kí kinh doanh số 0316612746 do Sở kế hoạch và đầu tư. Thành
+                        phố Hồ Chí
+                        Minh cấp ngày 27/11/2020.</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script src="JS/sanpham.js"></script>
+</body>
+
+</html>
